@@ -1,0 +1,87 @@
+body.stop-scroll {
+  overflow: hidden
+}
+#takeInitView {
+  margin-bottom: 20px;
+}
+.other-box {
+  height: 150px;
+  background: green;
+}
+#projection { /*set from js width and height to be same with graphs; we will need this as reference during transitionBackToG1 to put graph1 in center of #projection and scale it to initial size */
+  width: 800px;
+  height: 750px;
+  border: 1px solid black;
+  position: relative;
+}
+#main {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+svg {
+  background: #fff;
+}
+
+
+#projection-sidebar {
+  width: 370px;
+}
+.search-input {
+  width: 100%;
+  height: 45px;
+  background: gray;
+}
+.legend-box {
+  width: 100%;
+  height: 600px;
+  background: silver;
+
+   /* position: relative; */
+  /* -webkit-transition: top 0s;
+  -moz-transition: top 0s;
+  transition: top 0s; */
+  /* left:0px;
+  top: 0px; */
+}
+
+
+
+
+
+/*********/
+.network-graph-box {
+  /* position: relative; */
+  /* -webkit-transition: top 0s;
+  -moz-transition: top 0s;
+  transition: top 0s; */
+  /* left:0px;
+  top: 0px; */
+}
+
+line:hover {
+  stroke: black;
+  cursor: pointer;
+}
+/* svg {
+  border: 1px solid black;
+} */
+#coPubs {
+  background: #fff;
+  position: absolute;
+  border: 1px solid black;
+  padding: 20px;
+  width: 200px;
+}
+.show { display: block; }
+.hide { display: none; }
+.active-node {
+  transition: fill .5s;
+  fill: #333;
+}
+.active-link {
+  transition: stroke-opacity .5s, stroke .5s;
+  stroke: #333;
+  stroke-opacity: 1;
+}

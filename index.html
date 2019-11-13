@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>network graph prototype</title>
+    <link media="screen" rel='stylesheet' href=style.css>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src=main.js></script>
+  </head>
+  <body>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <button id='takeInitView'>back to init view</button> <br><br><br>
+    <div id='main' data-main='main'>
+      <div id="position-wrapper"></div>
+      <div id='projection'>
+        <div class='network-graph-box'>
+          <svg id='prof-graph' class='network-graph' height=0 width=0></svg>
+        </div>
+
+        <div class='detail-network-graph-box hide'>
+          <svg id='prof-detail-graph' class='detail-graph'></svg>
+        </div>
+      </div>
+
+      <div id='projection-sidebar'>
+
+        <div class="search-input"></div>
+
+      <p>checkbox input will be here</p>
+        <div style='visibility:hidden;' data-network-graph-ref></div>
+        <div class="legend-box">
+          <h4>Legend</h4>
+          <div></div>
+        </div>
+        <div class="other-box">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
